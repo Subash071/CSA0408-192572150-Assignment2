@@ -1,0 +1,3 @@
+detection: 4 deadlocked jobs: J1 J2 J3 J4
+recovery : abort J4 (loses 0.5 h of work), releases its resources
+detection: 0 deadlocked jobs left

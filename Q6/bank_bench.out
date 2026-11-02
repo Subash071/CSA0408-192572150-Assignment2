@@ -1,0 +1,11 @@
+case        n      m      time (us)  time/(m*n^2) ns safe?
+worst      10      3           0.29            0.953 yes
+worst     100      3          13.77            0.459 yes
+worst    1000      3        1234.29            0.411 yes
+worst    1000      6        1859.41            0.310 yes
+worst    1000     12        4807.90            0.401 yes
+best       10      3           0.07            0.235 yes
+best      100      3           0.37            0.012 yes
+best     1000      3           4.00            0.001 yes
+best     1000      6           7.40            0.001 yes
+best     1000     12          13.14            0.001 yes

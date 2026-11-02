@@ -1,0 +1,3 @@
+  PID  PPID STAT WCHAN          COMMAND
+ 6279     1 S    do_wait        pipe_noclose
+ 6280  6279 S    anon_pipe_read pipe_noclose

@@ -1,0 +1,5 @@
+threads=8 expected=8000000
+  plain counter++ : 8000000 (lost 0)
+  widened window  : 1000000 (lost 7000000)
+  mutex           : 8000000
+  atomic          : 8000000

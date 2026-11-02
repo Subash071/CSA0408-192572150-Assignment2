@@ -1,0 +1,3 @@
+P=4 C=4: consumed exactly once=686  never=804  more than once=510  sum=1999849 (expected 2001000) WRONG
+P=4 C=4: consumed exactly once=512  never=803  more than once=685  sum=1998223 (expected 2001000) WRONG
+P=4 C=4: consumed exactly once=790  never=802  more than once=408  sum=2005291 (expected 2001000) WRONG

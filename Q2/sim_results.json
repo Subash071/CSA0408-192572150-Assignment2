@@ -1,0 +1,257 @@
+{
+ "FCFS": {
+  "gantt": "P1(0-8) P2(8-12) P3(12-21) P4(21-26)",
+  "jobs": {
+   "P1": {
+    "arrival": 0,
+    "burst": 8,
+    "start": 0,
+    "finish": 8,
+    "tat": 8,
+    "wt": 0,
+    "rt": 0
+   },
+   "P2": {
+    "arrival": 1,
+    "burst": 4,
+    "start": 8,
+    "finish": 12,
+    "tat": 11,
+    "wt": 7,
+    "rt": 7
+   },
+   "P3": {
+    "arrival": 2,
+    "burst": 9,
+    "start": 12,
+    "finish": 21,
+    "tat": 19,
+    "wt": 10,
+    "rt": 10
+   },
+   "P4": {
+    "arrival": 3,
+    "burst": 5,
+    "start": 21,
+    "finish": 26,
+    "tat": 23,
+    "wt": 18,
+    "rt": 18
+   }
+  },
+  "avg_wt": 8.75,
+  "avg_tat": 15.25,
+  "avg_rt": 8.75,
+  "switches": 3
+ },
+ "SJF": {
+  "gantt": "P1(0-8) P2(8-12) P4(12-17) P3(17-26)",
+  "jobs": {
+   "P1": {
+    "arrival": 0,
+    "burst": 8,
+    "start": 0,
+    "finish": 8,
+    "tat": 8,
+    "wt": 0,
+    "rt": 0
+   },
+   "P2": {
+    "arrival": 1,
+    "burst": 4,
+    "start": 8,
+    "finish": 12,
+    "tat": 11,
+    "wt": 7,
+    "rt": 7
+   },
+   "P3": {
+    "arrival": 2,
+    "burst": 9,
+    "start": 17,
+    "finish": 26,
+    "tat": 24,
+    "wt": 15,
+    "rt": 15
+   },
+   "P4": {
+    "arrival": 3,
+    "burst": 5,
+    "start": 12,
+    "finish": 17,
+    "tat": 14,
+    "wt": 9,
+    "rt": 9
+   }
+  },
+  "avg_wt": 7.75,
+  "avg_tat": 14.25,
+  "avg_rt": 7.75,
+  "switches": 3
+ },
+ "SRTF": {
+  "gantt": "P1(0-1) P2(1-5) P4(5-10) P1(10-17) P3(17-26)",
+  "jobs": {
+   "P1": {
+    "arrival": 0,
+    "burst": 8,
+    "start": 0,
+    "finish": 17,
+    "tat": 17,
+    "wt": 9,
+    "rt": 0
+   },
+   "P2": {
+    "arrival": 1,
+    "burst": 4,
+    "start": 1,
+    "finish": 5,
+    "tat": 4,
+    "wt": 0,
+    "rt": 0
+   },
+   "P3": {
+    "arrival": 2,
+    "burst": 9,
+    "start": 17,
+    "finish": 26,
+    "tat": 24,
+    "wt": 15,
+    "rt": 15
+   },
+   "P4": {
+    "arrival": 3,
+    "burst": 5,
+    "start": 5,
+    "finish": 10,
+    "tat": 7,
+    "wt": 2,
+    "rt": 2
+   }
+  },
+  "avg_wt": 6.5,
+  "avg_tat": 13.0,
+  "avg_rt": 4.25,
+  "switches": 4
+ },
+ "Priority": {
+  "gantt": "P1(0-8) P3(8-17) P2(17-21) P4(21-26)",
+  "jobs": {
+   "P1": {
+    "arrival": 0,
+    "burst": 8,
+    "start": 0,
+    "finish": 8,
+    "tat": 8,
+    "wt": 0,
+    "rt": 0
+   },
+   "P2": {
+    "arrival": 1,
+    "burst": 4,
+    "start": 17,
+    "finish": 21,
+    "tat": 20,
+    "wt": 16,
+    "rt": 16
+   },
+   "P3": {
+    "arrival": 2,
+    "burst": 9,
+    "start": 8,
+    "finish": 17,
+    "tat": 15,
+    "wt": 6,
+    "rt": 6
+   },
+   "P4": {
+    "arrival": 3,
+    "burst": 5,
+    "start": 21,
+    "finish": 26,
+    "tat": 23,
+    "wt": 18,
+    "rt": 18
+   }
+  },
+  "avg_wt": 10.0,
+  "avg_tat": 16.5,
+  "avg_rt": 10.0,
+  "switches": 3
+ },
+ "RR q=3": {
+  "gantt": "P1(0-3) P2(3-6) P3(6-9) P4(9-12) P1(12-15) P2(15-16) P3(16-19) P4(19-21) P1(21-23) P3(23-26)",
+  "jobs": {
+   "P1": {
+    "arrival": 0,
+    "burst": 8,
+    "start": 0,
+    "finish": 23,
+    "tat": 23,
+    "wt": 15,
+    "rt": 0
+   },
+   "P2": {
+    "arrival": 1,
+    "burst": 4,
+    "start": 3,
+    "finish": 16,
+    "tat": 15,
+    "wt": 11,
+    "rt": 2
+   },
+   "P3": {
+    "arrival": 2,
+    "burst": 9,
+    "start": 6,
+    "finish": 26,
+    "tat": 24,
+    "wt": 15,
+    "rt": 4
+   },
+   "P4": {
+    "arrival": 3,
+    "burst": 5,
+    "start": 9,
+    "finish": 21,
+    "tat": 18,
+    "wt": 13,
+    "rt": 6
+   }
+  },
+  "avg_wt": 13.5,
+  "avg_tat": 20.0,
+  "avg_rt": 3.0,
+  "switches": 9
+ },
+ "quantum": {
+  "1": {
+   "avg_wt": 12.5,
+   "avg_tat": 19.0,
+   "avg_rt": 0.75,
+   "switches": 23,
+   "turns": 26
+  },
+  "3": {
+   "avg_wt": 13.5,
+   "avg_tat": 20.0,
+   "avg_rt": 3.0,
+   "switches": 9,
+   "turns": 10
+  },
+  "5": {
+   "avg_wt": 11.0,
+   "avg_tat": 17.5,
+   "avg_rt": 5.5,
+   "switches": 5,
+   "turns": 6
+  },
+  "20": {
+   "avg_wt": 8.75,
+   "avg_tat": 15.25,
+   "avg_rt": 8.75,
+   "switches": 3,
+   "turns": 4
+  }
+ }
+}

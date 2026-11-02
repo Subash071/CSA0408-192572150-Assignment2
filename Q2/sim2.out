@@ -1,0 +1,7 @@
+no ageing                                LONG starts t=63  finishes t=73
+ageing (1 level per 10 units waited)     LONG starts t=40  finishes t=50
+FCFS                   short WT= 69.00  long WT= 20.00  short RT= 69.00  switches= 11  finish=100
+SRTF (needs burst)     short WT=  0.00  long WT= 40.00  short RT=  0.00  switches= 21  finish=100
+RR q=2                 short WT=  3.80  long WT= 59.00  short RT=  3.80  switches= 49  finish=100
+RR q=10                short WT= 22.00  long WT= 55.00  short RT= 22.00  switches= 17  finish=100
+MLFQ q=2/4/8           short WT=  1.80  long WT= 59.00  short RT=  1.80  switches= 23  finish=100

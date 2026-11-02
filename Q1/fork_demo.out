@@ -1,0 +1,42 @@
+parent pid = 169
+
+--- ps view ---
+  PID  PPID STAT WCHAN        COMMAND
+  171   169 R    -            fork_demo
+  172   169 S    hrtimer_nano fork_demo
+  173   169 S    hrtimer_nano fork_demo
+  174   169 Z    -            fork_demo
+  175   169 S    do_wait      sh
+
+--- /proc view of each child ---
+child 0 (pid 171):
+  Name:	fork_demo
+  State:	R (running)
+  Pid:	171
+  PPid:	169
+  VmRSS:	     292 kB
+  voluntary_ctxt_switches:	0
+child 1 (pid 172):
+  Name:	fork_demo
+  State:	S (sleeping)
+  Pid:	172
+  PPid:	169
+  VmRSS:	     292 kB
+  voluntary_ctxt_switches:	1
+child 2 (pid 173):
+  Name:	fork_demo
+  State:	S (sleeping)
+  Pid:	173
+  PPid:	169
+  VmRSS:	     292 kB
+  voluntary_ctxt_switches:	1
+child 3 (pid 174):
+  Name:	fork_demo
+  State:	Z (zombie)
+  Pid:	174
+  PPid:	169
+  voluntary_ctxt_switches:	1
+reaped pid 171, exit status 0
+reaped pid 172, exit status 1
+reaped pid 173, exit status 2
+reaped pid 174, exit status 0

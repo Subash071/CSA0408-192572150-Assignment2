@@ -1,0 +1,10 @@
+== proc
+PROC   N=2000 create=1097.2 ms (548.6 us each)  teardown=4.3 ms
+PROC   per-process VmRSS=348 kB, avg Pss=27 kB, page-table=40 kB
+PROC   estimated memory for 2000 processes (Pss) = 52.7 MB
+== thread
+THREAD N=2000 create=41.8 ms (20.9 us each)  teardown=16.3 ms
+THREAD memory added by 2000 threads (RSS growth) = 16.5 MB (8.4 kB each)
+== switch
+PROCESS ping-pong: 1.15 us per switch (incl. 2 syscalls)
+THREAD ping-pong: 1.03 us per switch (incl. 2 syscalls)

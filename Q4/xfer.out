@@ -1,0 +1,10 @@
+method             size    time (ms)       MB/s
+pipe                1MB         0.49       2034   (best 0.28 ms)
+pipe               10MB         1.68       5955   (best 1.50 ms)
+pipe              100MB        15.37       6507   (best 13.18 ms)
+shared memory       1MB         0.40       2486   (best 0.32 ms)
+shared memory      10MB         0.87      11539   (best 0.75 ms)
+shared memory     100MB         5.16      19391   (best 5.04 ms)
+message queue       1MB         0.52       1935   (best 0.28 ms)
+message queue      10MB         2.19       4574   (best 2.04 ms)
+message queue     100MB        19.23       5201   (best 18.19 ms)

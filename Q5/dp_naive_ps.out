@@ -1,0 +1,7 @@
+  PID   LWP STAT WCHAN          COMMAND
+14908 14908 Sl   futex_do_wait  dp
+14908 14909 Sl   futex_do_wait  dp
+14908 14911 Sl   futex_do_wait  dp
+14908 14912 Sl   futex_do_wait  dp
+14908 14913 Sl   futex_do_wait  dp
+14908 14914 Sl   futex_do_wait  dp

@@ -1,0 +1,10 @@
+method                        readings    time (ms) ns per reading
+pipe, 1 write per reading        10000         3.98            398
+pipe, 1 write per reading       100000        38.42            384
+pipe, 1 write per reading      1000000       376.12            376
+shm, one-slot mailbox            10000        23.45           2345
+shm, one-slot mailbox           100000       201.54           2015
+shm, one-slot mailbox          1000000      1923.16           1923
+shm, ring of 1024                10000         4.70            470
+shm, ring of 1024               100000        46.09            461
+shm, ring of 1024              1000000       416.66            417

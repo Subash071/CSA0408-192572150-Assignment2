@@ -1,0 +1,7 @@
+Gantt: P1(0-5) P2(5-9) P3(9-14) P4(14-19) P1(19-22) P3(22-26)
+Process  TAT  WT
+P1        22  14
+P2         8   4
+P3        24  15
+P4        16  11
+Average TAT = 17.50, average WT = 11.00

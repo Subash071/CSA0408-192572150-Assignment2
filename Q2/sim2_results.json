@@ -1,0 +1,56 @@
+{
+ "starvation": {
+  "no ageing": {
+   "start": 63,
+   "finish": 73,
+   "waited": 63
+  },
+  "ageing (1 level per 10 units waited)": {
+   "start": 40,
+   "finish": 50,
+   "waited": 40
+  }
+ },
+ "mlfq": [
+  {
+   "name": "FCFS",
+   "short_wt": 69.0,
+   "long_wt": 20.0,
+   "short_rt": 69.0,
+   "switches": 11,
+   "makespan": 100
+  },
+  {
+   "name": "SRTF (needs burst)",
+   "short_wt": 0.0,
+   "long_wt": 40.0,
+   "short_rt": 0.0,
+   "switches": 21,
+   "makespan": 100
+  },
+  {
+   "name": "RR q=2",
+   "short_wt": 3.8,
+   "long_wt": 59.0,
+   "short_rt": 3.8,
+   "switches": 49,
+   "makespan": 100
+  },
+  {
+   "name": "RR q=10",
+   "short_wt": 22.0,
+   "long_wt": 55.0,
+   "short_rt": 22.0,
+   "switches": 17,
+   "makespan": 100
+  },
+  {
+   "name": "MLFQ q=2/4/8",
+   "short_wt": 1.8,
+   "long_wt": 59.0,
+   "short_rt": 1.8,
+   "switches": 23,
+   "makespan": 100
+  }
+ ]
+}

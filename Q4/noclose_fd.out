@@ -1,0 +1,4 @@
+0 -> /dev/null
+1 -> /home/claude/os/Q4/noclose.out
+2 -> /home/claude/os/Q4/noclose.out
+4 -> pipe:[2017]

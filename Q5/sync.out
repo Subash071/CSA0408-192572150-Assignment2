@@ -1,0 +1,23 @@
+=== short critical section: counter++ , 2,000,000 updates in total (median of 3 runs)
+mutex      threads=1  cs=  0us  wall=    32.16 ms  ns/update=       16  cpu=    31.95 ms ( 99% of wall)  spins/update=    0.00  correct
+mutex      threads=4  cs=  0us  wall=    33.15 ms  ns/update=       17  cpu=    32.87 ms ( 99% of wall)  spins/update=    0.00  correct
+mutex      threads=16 cs=  0us  wall=    32.74 ms  ns/update=       16  cpu=    32.51 ms ( 99% of wall)  spins/update=    0.00  correct
+spin lock  threads=1  cs=  0us  wall=    16.58 ms  ns/update=        8  cpu=    16.52 ms (100% of wall)  spins/update=    0.00  correct
+spin lock  threads=4  cs=  0us  wall=    45.84 ms  ns/update=       23  cpu=    45.61 ms ( 99% of wall)  spins/update=    2.51  correct
+spin lock  threads=16 cs=  0us  wall=    80.79 ms  ns/update=       40  cpu=    80.44 ms (100% of wall)  spins/update=    5.92  correct
+atomic add threads=1  cs=  0us  wall=    11.73 ms  ns/update=        6  cpu=    11.56 ms ( 99% of wall)  spins/update=    0.00  correct
+atomic add threads=4  cs=  0us  wall=    11.50 ms  ns/update=        6  cpu=    11.45 ms (100% of wall)  spins/update=    0.00  correct
+atomic add threads=16 cs=  0us  wall=    12.20 ms  ns/update=        6  cpu=    12.10 ms ( 99% of wall)  spins/update=    0.00  correct
+semaphore  threads=1  cs=  0us  wall=    41.80 ms  ns/update=       21  cpu=    40.09 ms ( 96% of wall)  spins/update=    0.00  correct
+semaphore  threads=4  cs=  0us  wall=    71.80 ms  ns/update=       36  cpu=    70.15 ms ( 98% of wall)  spins/update=    0.00  correct
+semaphore  threads=16 cs=  0us  wall=   119.75 ms  ns/update=       60  cpu=   119.37 ms (100% of wall)  spins/update=    0.00  correct
+=== long critical section: counter++ then usleep(100) inside the lock, 4,000 updates (median of 3 runs)
+mutex      threads=1  cs=100us  wall=   652.88 ms  ns/update=   163220  cpu=    60.91 ms (  9% of wall)  spins/update=    0.00  correct
+mutex      threads=4  cs=100us  wall=   655.92 ms  ns/update=   163979  cpu=    69.44 ms ( 11% of wall)  spins/update=    0.00  correct
+mutex      threads=16 cs=100us  wall=   655.93 ms  ns/update=   163981  cpu=    71.35 ms ( 11% of wall)  spins/update=    0.00  correct
+spin lock  threads=1  cs=100us  wall=   649.04 ms  ns/update=   162259  cpu=    57.24 ms (  9% of wall)  spins/update=    0.00  correct
+spin lock  threads=4  cs=100us  wall=   754.52 ms  ns/update=   188630  cpu=   605.02 ms ( 80% of wall)  spins/update=23844.05  correct
+spin lock  threads=16 cs=100us  wall=  9194.88 ms  ns/update=  2298719  cpu=  9049.66 ms ( 98% of wall)  spins/update=405188.85  correct
+semaphore  threads=1  cs=100us  wall=   655.43 ms  ns/update=   163858  cpu=    62.32 ms ( 10% of wall)  spins/update=    0.00  correct
+semaphore  threads=4  cs=100us  wall=   659.25 ms  ns/update=   164813  cpu=    73.80 ms ( 11% of wall)  spins/update=    0.00  correct
+semaphore  threads=16 cs=100us  wall=   662.95 ms  ns/update=   165738  cpu=    72.97 ms ( 11% of wall)  spins/update=    0.00  correct

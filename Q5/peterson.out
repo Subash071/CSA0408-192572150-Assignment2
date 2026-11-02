@@ -1,0 +1,15 @@
+atomic, spin, 2000 loops run1: counter = 4000 (expected 4000) time=.005003800 s
+atomic, spin, 2000 loops run2: counter = 4000 (expected 4000) time=.004885874 s
+atomic, spin, 2000 loops run3: counter = 4000 (expected 4000) time=.004904570 s
+atomic, spin, 2000 loops run4: counter = 4000 (expected 4000) time=.004861460 s
+atomic, spin, 2000 loops run5: counter = 4000 (expected 4000) time=.004807028 s
+plain,  spin, 2000 loops run1: counter = 4000 (expected 4000) time=.004746695 s
+plain,  spin, 2000 loops run2: counter = 4000 (expected 4000) time=.004638227 s
+plain,  spin, 2000 loops run3: counter = 4000 (expected 4000) time=.004627067 s
+plain,  spin, 2000 loops run4: counter = 4000 (expected 4000) time=.004215069 s
+plain,  spin, 2000 loops run5: counter = 4000 (expected 4000) time=.004763777 s
+atomic, spin+yield, 100000 loops run1: counter = 200000 (expected 200000) time=.008420132 s
+atomic, spin+yield, 100000 loops run2: counter = 200000 (expected 200000) time=.024770471 s
+atomic, spin+yield, 100000 loops run3: counter = 200000 (expected 200000) time=.008630680 s
+atomic, spin+yield, 100000 loops run4: counter = 200000 (expected 200000) time=.103261632 s
+atomic, spin+yield, 100000 loops run5: counter = 200000 (expected 200000) time=.008547827 s

@@ -1,0 +1,36 @@
+FCFS      P1(0-8) P2(8-12) P3(12-21) P4(21-26)
+   P1 WT= 0 TAT= 8 RT= 0
+   P2 WT= 7 TAT=11 RT= 7
+   P3 WT=10 TAT=19 RT=10
+   P4 WT=18 TAT=23 RT=18
+   avg WT=8.75 TAT=15.25 RT=8.75 switches=3
+SJF       P1(0-8) P2(8-12) P4(12-17) P3(17-26)
+   P1 WT= 0 TAT= 8 RT= 0
+   P2 WT= 7 TAT=11 RT= 7
+   P3 WT=15 TAT=24 RT=15
+   P4 WT= 9 TAT=14 RT= 9
+   avg WT=7.75 TAT=14.25 RT=7.75 switches=3
+SRTF      P1(0-1) P2(1-5) P4(5-10) P1(10-17) P3(17-26)
+   P1 WT= 9 TAT=17 RT= 0
+   P2 WT= 0 TAT= 4 RT= 0
+   P3 WT=15 TAT=24 RT=15
+   P4 WT= 2 TAT= 7 RT= 2
+   avg WT=6.50 TAT=13.00 RT=4.25 switches=4
+Priority  P1(0-8) P3(8-17) P2(17-21) P4(21-26)
+   P1 WT= 0 TAT= 8 RT= 0
+   P2 WT=16 TAT=20 RT=16
+   P3 WT= 6 TAT=15 RT= 6
+   P4 WT=18 TAT=23 RT=18
+   avg WT=10.00 TAT=16.50 RT=10.00 switches=3
+RR q=3    P1(0-3) P2(3-6) P3(6-9) P4(9-12) P1(12-15) P2(15-16) P3(16-19) P4(19-21) P1(21-23) P3(23-26)
+   P1 WT=15 TAT=23 RT= 0
+   P2 WT=11 TAT=15 RT= 2
+   P3 WT=15 TAT=24 RT= 4
+   P4 WT=13 TAT=18 RT= 6
+   avg WT=13.50 TAT=20.00 RT=3.00 switches=9
+
+--- quantum study ---
+1 {'avg_wt': 12.5, 'avg_tat': 19.0, 'avg_rt': 0.75, 'switches': 23, 'turns': 26}
+3 {'avg_wt': 13.5, 'avg_tat': 20.0, 'avg_rt': 3.0, 'switches': 9, 'turns': 10}
+5 {'avg_wt': 11.0, 'avg_tat': 17.5, 'avg_rt': 5.5, 'switches': 5, 'turns': 6}
+20 {'avg_wt': 8.75, 'avg_tat': 15.25, 'avg_rt': 8.75, 'switches': 3, 'turns': 4}
